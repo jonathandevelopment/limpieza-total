@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { products } from '../../utils/products';
 import { useState } from 'react';
 
@@ -81,6 +82,10 @@ export default function ProductsPage() {
             <h3 className="text-xl font-bold">{product.nombre}</h3>
             <p className="text-gray-700">{product.descripcion}</p>
             <p className="text-lg font-semibold mt-4">{product.precio}</p>
+            <div className="mt-4">
+                <Link href="#" className="text-blue-600 hover:underline">Ver producto</Link>
+             
+            </div>
           </div>
         ))}
       </div>

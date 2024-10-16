@@ -8,7 +8,7 @@ export default function FeaturedProducts() {
   return (
     <section className="py-8">
       {/* Título de Productos Destacados alineado a la izquierda */}
-      <h2 className="text-3xl font-bold text-left mb-8">Productos Destacados</h2>
+      <h2 className="text-3xl font-bold text-center text-blue-700 mb-8 pl-6">Productos Destacados</h2>
 
       {/* Grid de productos */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
