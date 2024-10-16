@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -17,16 +18,16 @@ export default function Footer() {
               <h3 className="text-xl font-bold mb-4">Enlaces Rápidos</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-400">Inicio</a>
+                  <Link href="/" className="hover:text-gray-400">Inicio</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">Productos</a>
+                  <Link href="/products" className="hover:text-gray-400">Productos</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">Servicios</a>
+                  <Link href="/#benefits" className="hover:text-gray-400">Beneficios</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">Contacto</a>
+                  <Link href="/#contact" className="hover:text-gray-400">Contacto</Link>
                 </li>
               </ul>
             </div>

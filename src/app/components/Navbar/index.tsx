@@ -12,13 +12,13 @@ export default function Navbar() {
               <Link href="/" className="text-white hover:text-gray-300">Inicio</Link>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-gray-300">Productos</a>
+              <Link href="/products" className="text-white hover:text-gray-300">Productos</Link>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-gray-300">Servicios</a>
+              <Link href="/#benefits" className="text-white hover:text-gray-300">Beneficios</Link>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-gray-300">Contacto</a>
+              <Link href="/#contact" className="text-white hover:text-gray-300">Contacto</Link>
             </li>
           </ul>
           {/* Botón de menú para pantallas pequeñas */}

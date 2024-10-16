@@ -1,6 +1,6 @@
 export default function AboutUs() {
     return (
-      <section className="bg-gray-200 py-12">
+      <section id='contact' className="bg-gray-200 py-12">
         <div className="container mx-auto px-4">
           {/* Grid con dos columnas */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -22,14 +22,14 @@ export default function AboutUs() {
               </p>
   
               {/* CTA dentro del bloque de la información */}
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <a
                   href="/about"
                   className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-blue-700 transition duration-300"
                 >
                   Conoce Más Sobre Nosotros
                 </a>
-              </div>
+              </div> */}
             </div>
   
             {/* Columna derecha: Formulario de contacto */}
