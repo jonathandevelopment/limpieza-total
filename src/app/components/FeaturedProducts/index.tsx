@@ -21,7 +21,9 @@ export default function FeaturedProducts() {
 
             {/* Link "Ver producto" */}
             <div className="mt-4">
-                <Link href="#" className="text-blue-600 hover:underline">Ver producto</Link>
+                <Link 
+                href={`/products/${product.id}`}
+                className="text-blue-600 hover:underline">Ver producto</Link>
              
             </div>
           </div>

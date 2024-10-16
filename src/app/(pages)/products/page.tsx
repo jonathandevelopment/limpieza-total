@@ -83,7 +83,9 @@ export default function ProductsPage() {
             <p className="text-gray-700">{product.descripcion}</p>
             <p className="text-lg font-semibold mt-4">{product.precio}</p>
             <div className="mt-4">
-                <Link href="#" className="text-blue-600 hover:underline">Ver producto</Link>
+                <Link 
+                href={`/products/${product.id}`}
+                 className="text-blue-600 hover:underline">Ver producto</Link>
              
             </div>
           </div>
