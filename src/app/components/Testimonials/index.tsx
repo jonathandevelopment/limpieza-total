@@ -14,7 +14,7 @@ export default function Testimonials() {
                 />
               </div>
               <p className="text-gray-700 text-center italic mb-4">
-                "&quot;Los productos de Limpieza Total me han ayudado a mantener mi hogar impecable. ¡Altamente recomendados!"&quot;
+                &quot;Los productos de Limpieza Total me han ayudado a mantener mi hogar impecable. ¡Altamente recomendados!&quot;
               </p>
               <h3 className="text-center font-semibold">Ana Rodríguez</h3>
             </div>
@@ -29,7 +29,7 @@ export default function Testimonials() {
                 />
               </div>
               <p className="text-gray-700 text-center italic mb-4">
-                "&quot;La cera para autos de Limpieza Total es la mejor que he usado. Mi coche brilla como nunca."&quot;
+                &quot;La cera para autos de Limpieza Total es la mejor que he usado. Mi coche brilla como nunca.&quot;
               </p>
               <h3 className="text-center font-semibold">Carlos García</h3>
             </div>
@@ -44,7 +44,7 @@ export default function Testimonials() {
                 />
               </div>
               <p className="text-gray-700 text-center italic mb-4">
-                "&quot;Mis hijos y mi familia están seguros usando los productos de Limpieza Total. ¡Sin químicos dañinos!"&quot;
+                &quot;Mis hijos y mi familia están seguros usando los productos de Limpieza Total. ¡Sin químicos dañinos!&quot;
               </p>
               <h3 className="text-center font-semibold">Lucía Pérez</h3>
             </div>
