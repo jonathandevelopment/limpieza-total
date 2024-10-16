@@ -6,7 +6,7 @@ export default function FeaturedProducts() {
   const featuredProducts = products.filter(product => product.feature);
 
   return (
-    <section className="py-8">
+    <section id='featured' className="py-8">
       {/* Título de Productos Destacados alineado a la izquierda */}
       <h2 className="text-3xl font-bold text-center text-blue-700 mb-8 pl-6">Productos Destacados</h2>
 
