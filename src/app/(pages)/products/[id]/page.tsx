@@ -2,6 +2,7 @@
 import { useParams } from 'next/navigation';
 import { products } from '../../../utils/products'; // Ajusta la ruta si es necesario
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -35,7 +36,9 @@ export default function ProductDetail() {
     <div className="container mx-auto px-4 py-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Imagen del producto */}
-        <img 
+        <Image 
+          width={400}
+          height={400}
           src={product.imagen} 
           alt={product.nombre} 
           className="w-full h-auto max-w-md mx-auto rounded-lg shadow-lg" 

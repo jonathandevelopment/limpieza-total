@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { products } from '../../utils/products';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ProductsPage() {
   // Opciones de ejemplo para los dropdowns
@@ -78,7 +79,12 @@ export default function ProductsPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((product) => (
           <div key={product.id} className="bg-white p-6 rounded-lg shadow-lg">
-            <img src={product.imagen} alt={product.nombre} className="w-full h-auto mb-4" />
+            <Image 
+            width={400}
+            height={400}
+            src={product.imagen}
+            alt={product.nombre} 
+            className="w-full h-auto mb-4" />
             <h3 className="text-xl font-bold">{product.nombre}</h3>
             <p className="text-gray-700">{product.descripcion}</p>
             <p className="text-lg font-semibold mt-4">{product.precio}</p>
