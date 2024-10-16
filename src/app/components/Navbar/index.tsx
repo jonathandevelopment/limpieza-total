@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -8,7 +9,7 @@ export default function Navbar() {
           </div>
           <ul className="hidden md:flex space-x-6">
             <li>
-              <a href="#" className="text-white hover:text-gray-300">Inicio</a>
+              <Link href="/" className="text-white hover:text-gray-300">Inicio</Link>
             </li>
             <li>
               <a href="#" className="text-white hover:text-gray-300">Productos</a>
