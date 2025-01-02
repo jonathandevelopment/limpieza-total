@@ -31,6 +31,9 @@ export default function Navbar() {
           <li>
             <Link href="/#contact" className="text-white hover:text-gray-300">Contacto</Link>
           </li>
+          <li>
+            <Link href="/cart" className="text-white hover:text-gray-300">Carrito</Link>
+          </li>
         </ul>
 
         {/* Botón de menú para pantallas pequeñas */}

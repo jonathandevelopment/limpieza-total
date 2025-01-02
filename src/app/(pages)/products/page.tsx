@@ -1,14 +1,16 @@
-"use client"
+"use client";
 import Link from 'next/link';
 import { products } from '../../utils/products';
 import { useState } from 'react';
 import Image from 'next/image';
+import { useCart } from '../../context/CartContext'; // Importar el contexto del carrito
 
 export default function ProductsPage() {
   // Opciones de ejemplo para los dropdowns
   const [selectedCategory, setSelectedCategory] = useState('Todas las categorías');
   const [selectedProductType, setSelectedProductType] = useState('Todos los tipos');
   const [selectedPriceRange, setSelectedPriceRange] = useState('Todos los precios');
+  const { addToCart } = useCart(); // Obtener la función para agregar al carrito
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -17,7 +19,6 @@ export default function ProductsPage() {
       {/* Filtro con Dropdowns */}
       <div className="bg-gray-100 p-4 rounded-lg shadow mb-8">
         <div className="flex flex-wrap items-center justify-between space-y-4 md:space-y-0">
-          
           {/* Campo de búsqueda */}
           <div className="flex items-center space-x-2 w-full md:w-auto">
             <label className="text-gray-600">Filtros</label>
@@ -80,19 +81,33 @@ export default function ProductsPage() {
         {products.map((product) => (
           <div key={product.id} className="bg-white p-6 rounded-lg shadow-lg">
             <Image 
-            width={400}
-            height={400}
-            src={product.imagen}
-            alt={product.nombre} 
-            className="w-full h-auto mb-4" />
+              width={400}
+              height={400}
+              src={product.imagen}
+              alt={product.nombre} 
+              className="w-full h-auto mb-4" 
+            />
             <h3 className="text-xl font-bold">{product.nombre}</h3>
             <p className="text-gray-700">{product.descripcion}</p>
             <p className="text-lg font-semibold mt-4">{product.precio}</p>
-            <div className="mt-4">
-                <Link 
+            <div className="mt-4 flex justify-between">
+              <Link 
                 href={`/products/${product.id}`}
-                 className="text-blue-600 hover:underline">Ver producto</Link>
-             
+                className="text-blue-600 hover:underline"
+              >
+                Ver producto
+              </Link>
+              <button 
+                onClick={() => addToCart({ 
+                  id: product.id, 
+                  name: product.nombre, 
+                  price: product.precio, 
+                  quantity: 1 
+                })}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         ))}
